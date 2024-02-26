@@ -25,21 +25,26 @@ public class MainActivity extends AppCompatActivity
 
     public void clicked(View view)
     {
+
         if (sw.isChecked()==true && tb.isChecked()==false)
         {
             getWindow().getDecorView().setBackgroundColor(Color.CYAN);
         }
+
         else if (sw.isChecked()==false && tb.isChecked()==true)
         {
             getWindow().getDecorView().setBackgroundColor(Color.MAGENTA);
         }
+
         else if (sw.isChecked()==true && tb.isChecked()==true)
         {
             getWindow().getDecorView().setBackgroundColor(Color.LTGRAY);
         }
+
         else
         {
             getWindow().getDecorView().setBackgroundColor(Color.RED);
         }
+
     }
 }
